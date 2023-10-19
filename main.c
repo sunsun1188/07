@@ -4,14 +4,19 @@
 
 int main(int argc, char *argv[]) {
 	
-	int flag=1;
-	int y;  // y 선언 해줘야함 
+	int i;
 	
-	while (flag!=0) {
-		int y;
-		y=3;
-		flag=0;
-	}
-	y=4;
+	for (i=0;i<5;i++) {
+		int temp=1;
+		printf("temp=%d\n", temp);
+		temp++;
+	}	
 	return 0;
 }
+/*
+for (i=0;i<5;i++) {
+		
+		static int temp=1; 
+		printf("temp=%d\n", temp);
+		temp++;
+	}	*/ // temp=1,2,3,4,5 출력하고싶을 때의 코드  
